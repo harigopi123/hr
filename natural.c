@@ -1,17 +1,22 @@
 #include <stdio.h>
+
 int main()
 {
-    int n, i, sum = 0;
-    
-    printf("Enter a positive integer: ");
-    scanf("%d",&n);
+    int i, n, sum=0;
 
-    for(i=1; i <= n; ++i)
+    /* Reads any number from user */
+    printf("Enter any number to find sum of first n natural numbers: ");
+    scanf("%d", &n);
+
+    /*
+     * Calculates sum of all natural numbers
+     */
+    for(i=1; i<=n; i++)
     {
-        sum += i;   // sum = sum+i;
+        sum += i;
     }
 
-    printf("Sum = %d",sum);
+    printf("\nSum of first %d natural numbers = %d", n, sum);
 
     return 0;
-}
+} 
