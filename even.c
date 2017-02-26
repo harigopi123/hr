@@ -1,16 +1,31 @@
+
+C Program Print Odd Numbers in a given range m to n
+by Dinesh Thakur
+
+
+
 #include <stdio.h>
-int main()
+
+void main()
+
 {
-    int number;
 
-    printf("Enter an integer: ");
-    scanf("%d", &number);
+    int num,m =20,n=40;
 
-    // True if the number is perfectly divisible by 2
-    if(number % 2 == 0)
-        printf("%d is even.", number);
-    else
-        printf("%d is odd.", number);
+    clrscr();
 
-    return 0;
-}
+    printf("Print Odd Numbers in a given range m to n:\n");
+
+    for (num = m; num <= n; num++)
+
+        {
+
+               if (num % 2 == 0)
+
+                  printf ("%d ", num);
+
+         }
+
+                getch();
+
+} 
