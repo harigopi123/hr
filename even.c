@@ -1,31 +1,18 @@
-
-C Program Print Odd Numbers in a given range m to n
-by Dinesh Thakur
-
-
-
-#include <stdio.h>
-
-void main()
-
+#include<stdio.h>
+#include<conio.h>
+int main()
 {
-
-    int num,m =20,n=40;
-
-    clrscr();
-
-    printf("Print Odd Numbers in a given range m to n:\n");
-
-    for (num = m; num <= n; num++)
-
-        {
-
-               if (num % 2 == 0)
-
-                  printf ("%d ", num);
-
-         }
-
-                getch();
-
-} 
+	int low=0;
+	int high=0;
+	int c=0;
+	printf("\nEnter lower limit");
+	scanf("%d",&low);
+	printf("\nEnter upper limit");
+	scanf("%d",&high);
+	for(int i=low;i<=high;i++)
+	{
+		if((i%2)!=0)
+		printf("\t%d",i);
+	}
+return 0;
+}
